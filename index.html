@@ -16,6 +16,11 @@
 	<p>git reset: addの取り消し</p>
 	<p>git commit --amend: 直前のコミットの取り消し</p><!-- pushしたコミットには絶対に使ってはいけない -->
 	<p>git remote: リモートリポジトリの情報確認</p>
-	<p>git remote add [remote name] [remote url]: リモートリポジトリの追加 -v: URL表示</p>
+	<p>git remote add [remote name] [remote url]: リモートの追加 -v: URL表示</p>
+	<p>git fetch [remote name] [branch name] + git merge [remote name/branch name]: リモートリポジトリから情報を取得 + ローカルに反映</p>
+	<p>git pull [remote name] [branch name]: 上記を一度にできる</p><!-- しかし挙動がとても恐ろしい ワークツリーにてマージしたいブランチ情報と現在いるブランチが統合されてしまう -->
+	<p>git remote show [remote name]: リモートの詳細情報の表示</p>
+	<p>git remote rename [old temote name] [new remote name] : リモート名の変更</p>
+	<p>git remoter rm [remote name]: リモートの削除</p>
 </body>
 </html>
