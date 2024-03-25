@@ -20,7 +20,7 @@
 	<p>git commit --amend: 直前のコミットの取り消し</p><!-- pushしたコミットには絶対に使ってはいけない -->
 	<p>git remote: リモートリポジトリの情報確認</p>
 	<p>git remote add [remote name] [remote url]: リモートの追加 -v: URL表示</p>
-	<p>git fetch [remote name] [branch name] + git merge [remote name/branch name]: リモートリポジトリから情報を取得 + ローカルに反映</p>
+	<p>git fetch [remote name] [branch name] + git merge [remote name/branch name]: 他のリモートやブランチから情報を取得 + ローカルに反映</p>
 	<p>git pull [remote name] [branch name]: 上記を一度にできる</p><!-- しかし挙動がとても恐ろしい ワークツリーにてマージしたいブランチ情報と現在いるブランチが統合されてしまう -->
 	<p>git remote show [remote name]: リモートの詳細情報の表示</p>
 	<p>git remote rename [old temote name] [new remote name] : リモート名の変更</p>
@@ -31,5 +31,8 @@
 	<p>git merge [branch name to import]: 他のブランチ内容を取り込める</p>
 	<p>git branch -m [branch name]: ブランチの変更</p>
 	<p>git branch -d [branch name]: ブランチの削除 -D: 強制削除</p>
+	<p>git rebase: 履歴を一直線に整えつつ、他のブランチの内容を取得して取り込む</p><!-- pushしたコミットは絶対にリベースしてはいけない ローカルとGithubの履歴に矛盾が起こるため -->
+	<p>git push -f: 強制プッシュ</p><!-- 絶対に使ってはいけないらしい -->
+	<p>git rebase -i [commit id(HEAD~3 etc)]: 複数のコミットをやり直す</p><!-- HEAD^n: HEADを基点にn番目の親コミットを指定 HEAD~n: n番目の親を起点にそれ以降のコミットを一括指定 -->
 </body>
 </html>
